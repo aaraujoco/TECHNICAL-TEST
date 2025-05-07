@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "PropertyManager.API.Trace.Controllers.PropertyTrace.PropertyTraceController",
+    "Method": "FindPropertiesTrace",
+    "RelativePath": "api/PropertyTrace/find_by",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "PropertyManager.Application.Property.Queries.GetPropertyTraceByPropertyIdQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

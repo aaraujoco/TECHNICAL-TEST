@@ -1,0 +1,6 @@
+@PropertyManager.API.Trace_HostAddress = http://localhost:5098
+
+GET {{PropertyManager.API.Trace_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "PropertyManager.API\\PropertyManager.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PropertyManager.API.Gateway\\PropertyManager.API.Gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PropertyManager.API.Security\\PropertyManager.API.Security.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

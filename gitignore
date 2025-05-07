@@ -1,0 +1,65 @@
+
+############################
+## .NET and Visual Studio #
+############################
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+## NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Visual Studio
+.vs/
+.vscode/
+
+## ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+.env
+
+## EF Core Migrations snapshots (optional)
+**/*ModelSnapshot.cs
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Rider
+.idea/
+
+## macOS
+.DS_Store
+
+## Windows thumbs.db
+Thumbs.db
+
+## Logs
+*.log
+
+## Others
+_ReSharper*/
+*.DotSettings.user
+*.bak
+*.sql
+*.dbmdl
+
+## Deployment
+.publish/

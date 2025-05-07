@@ -1,0 +1,36 @@
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Infrastructure.deps.json
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Infrastructure.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Infrastructure.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Application.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Domain.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Application.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Domain.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.AssemblyInfo.cs
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.sourcelink.json
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\Property.374DB521.Up2Date
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\refint\PropertyManager.Infrastructure.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Infrastructure\obj\Debug\net8.0\ref\PropertyManager.Infrastructure.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Infrastructure.deps.json
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Infrastructure.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Infrastructure.pdb
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Application.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Domain.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Application.pdb
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\bin\Debug\net8.0\PropertyManager.Domain.pdb
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.csproj.AssemblyReference.cache
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.AssemblyInfoInputs.cache
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.AssemblyInfo.cs
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.sourcelink.json
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\Property.374DB521.Up2Date
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\refint\PropertyManager.Infrastructure.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\PropertyManager.Infrastructure.pdb
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Infrastructure\obj\Debug\net8.0\ref\PropertyManager.Infrastructure.dll
