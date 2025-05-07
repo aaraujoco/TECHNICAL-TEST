@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YWZnTS4K8XE=",
+  "dgSpecHash": "V8HDL93LMes=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
+  "projectFilePath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj": {}
+    "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj": {
+    "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj",
+        "projectUniqueName": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj",
         "projectName": "PropertyManager.API.Security",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj",
+        "projectPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Security\\PropertyManager.API.Security.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Security\\obj\\",
+        "outputPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VXo7s8inpXE=",
+  "dgSpecHash": "ybTFE8xs3Xc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Infrastructure.UnitTest\\PropertyManager.Infrastructure.UnitTest.csproj",
+  "projectFilePath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Infrastructure.UnitTest\\PropertyManager.Infrastructure.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\autofixture\\4.18.1\\autofixture.4.18.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",

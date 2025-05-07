@@ -2588,11 +2588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
+      "projectUniqueName": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
       "projectName": "PropertyManager.API.Trace",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
+      "projectPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.API.Trace\\obj\\",
+      "outputPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Trace\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2613,11 +2613,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Application\\PropertyManager.Application.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Application\\PropertyManager.Application.csproj"
+            "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\PropertyManager.Application.csproj": {
+              "projectPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\PropertyManager.Application.csproj"
             },
-            "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Infrastructure\\PropertyManager.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Infrastructure\\PropertyManager.Infrastructure.csproj"
+            "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Infrastructure\\PropertyManager.Infrastructure.csproj": {
+              "projectPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Infrastructure\\PropertyManager.Infrastructure.csproj"
             }
           }
         }
