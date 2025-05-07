@@ -66,6 +66,25 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE GetAll_Owners
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        IdOwner,
+        Name,
+        Address,
+        Photo,
+        Birthday,
+        CreatedBy,
+        CreatedDate,
+        UpdatedBy,
+        UpdatedDate
+    FROM Owners;
+END;
+GO
+
 CREATE OR ALTER PROCEDURE Create_Owner_Async
     @Name NVARCHAR(255),
     @Address NVARCHAR(255),

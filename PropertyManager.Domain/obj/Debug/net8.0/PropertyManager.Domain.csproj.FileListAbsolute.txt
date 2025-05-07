@@ -10,3 +10,15 @@ C:\Users\USER\source\repos\PropertyManager\PropertyManager.Domain\obj\Debug\net8
 C:\Users\USER\source\repos\PropertyManager\PropertyManager.Domain\obj\Debug\net8.0\refint\PropertyManager.Domain.dll
 C:\Users\USER\source\repos\PropertyManager\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.pdb
 C:\Users\USER\source\repos\PropertyManager\PropertyManager.Domain\obj\Debug\net8.0\ref\PropertyManager.Domain.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\bin\Debug\net8.0\PropertyManager.Domain.deps.json
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\bin\Debug\net8.0\PropertyManager.Domain.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\bin\Debug\net8.0\PropertyManager.Domain.pdb
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.AssemblyInfoInputs.cache
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.AssemblyInfo.cs
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.csproj.CoreCompileInputs.cache
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.sourcelink.json
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\refint\PropertyManager.Domain.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\PropertyManager.Domain.pdb
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Domain\obj\Debug\net8.0\ref\PropertyManager.Domain.dll
