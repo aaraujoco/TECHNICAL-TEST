@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Domain\\PropertyManager.Domain.csproj": {}
+    "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Domain\\PropertyManager.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Domain\\PropertyManager.Domain.csproj": {
+    "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Domain\\PropertyManager.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Domain\\PropertyManager.Domain.csproj",
+        "projectUniqueName": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Domain\\PropertyManager.Domain.csproj",
         "projectName": "PropertyManager.Domain",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Domain\\PropertyManager.Domain.csproj",
+        "projectPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Domain\\PropertyManager.Domain.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\PropertyManager\\PropertyManager.Domain\\obj\\",
+        "outputPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
