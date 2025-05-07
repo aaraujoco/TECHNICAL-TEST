@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "571blRYkYTYcFdEZ0iGUnSJYHR5W0unMh0xv3MDReOg=",
+  "Source": "PropertyManager.API.Trace",
+  "BasePath": "_content/PropertyManager.API.Trace",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

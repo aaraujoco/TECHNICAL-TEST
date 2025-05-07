@@ -1,0 +1,16 @@
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\bin\Debug\net8.0\PropertyManager.Application.deps.json
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\bin\Debug\net8.0\PropertyManager.Application.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\bin\Debug\net8.0\PropertyManager.Application.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\bin\Debug\net8.0\PropertyManager.Domain.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\bin\Debug\net8.0\PropertyManager.Domain.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.AssemblyInfo.cs
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.sourcelink.json
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\Property.76980463.Up2Date
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\refint\PropertyManager.Application.dll
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\PropertyManager.Application.pdb
+C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application\obj\Debug\net8.0\ref\PropertyManager.Application.dll

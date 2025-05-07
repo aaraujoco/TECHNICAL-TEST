@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PropertyManager.API.Security.props" />
+</Project>
