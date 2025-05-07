@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\PropertyManager.API.Gateway.props" />
-</Project>
