@@ -7,7 +7,6 @@ using PropertyManager.Application.Common.Models;
 using PropertyManager.Application.Property.Commands.CreatePropertyObject;
 using PropertyManager.Application.Property.Commands.UpdatePropertyObject;
 using PropertyManager.Application.Property.Queries;
-using PropertyManager.Application.Property.Queries.Validations;
 using PropertyManager.Domain.Common;
 using System.Net;
 
@@ -62,7 +61,7 @@ public class PropertyController : ApiControllerBase
 
         return Ok(new TResponse()
         {
-            Message = $"{response.TotalCount} patients were found.",
+            Message = $"{response.TotalCount} properties were found.",
             Data = response,
         });
     }

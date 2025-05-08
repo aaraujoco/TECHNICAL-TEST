@@ -35,13 +35,80 @@
           }
         }
       }
+    },
+    "/api/PropertyTrace": {
+      "post": {
+        "tags": [
+          "PropertyTrace"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePropertyTraceObjectCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePropertyTraceObjectCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePropertyTraceObjectCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "CreatePropertyTraceObjectCommand": {
+        "type": "object",
+        "properties": {
+          "propertyTrace": {
+            "$ref": "#/components/schemas/PropertyTraceModel"
+          }
+        },
+        "additionalProperties": false
+      },
       "GetPropertyTraceByPropertyIdQuery": {
         "type": "object",
         "properties": {
+          "idProperty": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertyTraceModel": {
+        "type": "object",
+        "properties": {
+          "dateSale": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "number",
+            "format": "double"
+          },
+          "tax": {
+            "type": "number",
+            "format": "double"
+          },
           "idProperty": {
             "type": "integer",
             "format": "int32"

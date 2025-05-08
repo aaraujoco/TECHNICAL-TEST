@@ -21,6 +21,6 @@ namespace PropertyManager.Application.Common.Models
         public int Year { get; set; }
 
         public OwnerModelOut? Owner { get; set; } 
-        public List<PropertyTraceModelOut>? PropertyTraces { get; set; }
+        public List<PropertyTraceModelOut> PropertyTraces { get; set; } = new();
     }
 }

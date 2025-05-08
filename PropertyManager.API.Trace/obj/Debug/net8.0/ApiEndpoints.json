@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "PropertyManager.API.Trace.Controllers.PropertyTrace.PropertyTraceController",
+    "Method": "CreatePropertyTrace",
+    "RelativePath": "api/PropertyTrace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "PropertyManager.Application.Property.Commands.CreatePropertyTraceObject.CreatePropertyTraceObjectCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PropertyManager.API.Trace.Controllers.PropertyTrace.PropertyTraceController",
     "Method": "FindPropertiesTrace",
     "RelativePath": "api/PropertyTrace/find_by",
     "HttpMethod": "POST",

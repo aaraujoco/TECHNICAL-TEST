@@ -3,10 +3,10 @@ using PropertyManager.Application.Common.Models;
 
 namespace PropertyManager.Application.Property.Commands.Validations;
 
-    public class PropertyValidator : AbstractValidator<PropertyModel>
+public class PropertyValidator : AbstractValidator<PropertyModel>
+{
+    public PropertyValidator()
     {
-        public PropertyValidator()
-        {
         RuleFor(p => p.Name)
         .NotEmpty().WithMessage("Name is required.")
         .MaximumLength(100).WithMessage("Name must not exceed 100 characters.");

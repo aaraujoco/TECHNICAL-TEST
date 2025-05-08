@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.application\\property\\queries\\getpropertiespaginatedquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|solutionrelative:propertymanager.application\\property\\queries\\getpropertiespaginatedquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.application\\common\\interfaces\\persistence\\ipropertyobjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|solutionrelative:propertymanager.application\\common\\interfaces\\persistence\\ipropertyobjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B89DD9D7-FDBD-424E-9F5C-33B5B2369CFE}|PropertyManager.API\\PropertyManager.API.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.api\\controllers\\property\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B89DD9D7-FDBD-424E-9F5C-33B5B2369CFE}|PropertyManager.API\\PropertyManager.API.csproj|solutionrelative:propertymanager.api\\controllers\\property\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD233849-2DB9-4978-8812-D42D5291AB4C}|PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.api.trace\\controllers\\propertytrace\\propertytracecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD233849-2DB9-4978-8812-D42D5291AB4C}|PropertyManager.API.Trace\\PropertyManager.API.Trace.csproj|solutionrelative:propertymanager.api.trace\\controllers\\propertytrace\\propertytracecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.application\\common\\models\\propertymodelout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|solutionrelative:propertymanager.application\\common\\models\\propertymodelout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.application\\property\\commands\\createpropertyobject\\createpropertyobjectcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|solutionrelative:propertymanager.application\\property\\commands\\createpropertyobject\\createpropertyobjectcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|c:\\business\\example asp net\\technical-test\\propertymanager.application\\property\\commands\\createownerobject\\createownerobjectcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586B9BC8-FCC0-4AE1-90F4-FB0D9DA2F7EE}|PropertyManager.Application\\PropertyManager.Application.csproj|solutionrelative:propertymanager.application\\property\\commands\\createownerobject\\createownerobjectcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPropertyObjectRepository.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Common\\Interfaces\\Persistence\\IPropertyObjectRepository.cs",
+              "RelativeDocumentMoniker": "PropertyManager.Application\\Common\\Interfaces\\Persistence\\IPropertyObjectRepository.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Common\\Interfaces\\Persistence\\IPropertyObjectRepository.cs",
+              "RelativeToolTip": "PropertyManager.Application\\Common\\Interfaces\\Persistence\\IPropertyObjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T05:07:05.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropertyController.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API\\Controllers\\Property\\PropertyController.cs",
+              "RelativeDocumentMoniker": "PropertyManager.API\\Controllers\\Property\\PropertyController.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API\\Controllers\\Property\\PropertyController.cs",
+              "RelativeToolTip": "PropertyManager.API\\Controllers\\Property\\PropertyController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowD8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T05:06:31.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PropertyModelOut.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Common\\Models\\PropertyModelOut.cs",
+              "RelativeDocumentMoniker": "PropertyManager.Application\\Common\\Models\\PropertyModelOut.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Common\\Models\\PropertyModelOut.cs",
+              "RelativeToolTip": "PropertyManager.Application\\Common\\Models\\PropertyModelOut.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T05:01:58.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PropertyTraceController.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Trace\\Controllers\\PropertyTrace\\PropertyTraceController.cs",
+              "RelativeDocumentMoniker": "PropertyManager.API.Trace\\Controllers\\PropertyTrace\\PropertyTraceController.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.API.Trace\\Controllers\\PropertyTrace\\PropertyTraceController.cs",
+              "RelativeToolTip": "PropertyManager.API.Trace\\Controllers\\PropertyTrace\\PropertyTraceController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T04:58:30.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateOwnerObjectCommand.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Property\\Commands\\CreateOwnerObject\\CreateOwnerObjectCommand.cs",
+              "RelativeDocumentMoniker": "PropertyManager.Application\\Property\\Commands\\CreateOwnerObject\\CreateOwnerObjectCommand.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Property\\Commands\\CreateOwnerObject\\CreateOwnerObjectCommand.cs",
+              "RelativeToolTip": "PropertyManager.Application\\Property\\Commands\\CreateOwnerObject\\CreateOwnerObjectCommand.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T04:51:19.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreatePropertyObjectCommand.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Property\\Commands\\CreatePropertyObject\\CreatePropertyObjectCommand.cs",
+              "RelativeDocumentMoniker": "PropertyManager.Application\\Property\\Commands\\CreatePropertyObject\\CreatePropertyObjectCommand.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Property\\Commands\\CreatePropertyObject\\CreatePropertyObjectCommand.cs",
+              "RelativeToolTip": "PropertyManager.Application\\Property\\Commands\\CreatePropertyObject\\CreatePropertyObjectCommand.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwEQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T04:46:31.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetPropertiesPaginatedQuery.cs",
+              "DocumentMoniker": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Property\\Queries\\GetPropertiesPaginatedQuery.cs",
+              "RelativeDocumentMoniker": "PropertyManager.Application\\Property\\Queries\\GetPropertiesPaginatedQuery.cs",
+              "ToolTip": "C:\\Business\\Example ASP Net\\TECHNICAL-TEST\\PropertyManager.Application\\Property\\Queries\\GetPropertiesPaginatedQuery.cs",
+              "RelativeToolTip": "PropertyManager.Application\\Property\\Queries\\GetPropertiesPaginatedQuery.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwD0AAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T04:46:20.397Z",
+              "EditorCaption": ""
             }
           ]
         }

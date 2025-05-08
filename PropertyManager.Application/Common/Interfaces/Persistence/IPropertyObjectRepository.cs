@@ -15,7 +15,7 @@ public interface IPropertyObjectRepository
     Task<PropertyManager.Domain.Entities.Property> GetPropertyByIdAsync(int propertyId);
 
     /// <summary>
-    /// Get filtered patients.
+    /// Get filtered properties.
     /// </summary>
     /// <param name="filters"></param>
     /// <returns></returns>

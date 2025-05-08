@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,10 @@ namespace PropertyManager.Application.Common.Models
 {
     public class PropertyTraceModel
     {
-        public DateTime DateSale { get; set; }
+        [Display(Name = "DateSale")]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        [DataType(DataType.Date)]
+        public string? DateSale { get; set; }
 
         /// <summary>
         /// Name associated with the property trace.

@@ -20,11 +20,6 @@ namespace PropertyManager.Application.Common.Models
         [DataType(DataType.Date)]
         public string? Birthday { get; set; }
 
-        /// <summary>
-        /// Username or identifier of the user who created this record.
-        /// </summary>
-
-        public string? UserName { get; set; }
 
     }
 }

@@ -232,10 +232,6 @@
             "type": "string",
             "format": "date",
             "nullable": true
-          },
-          "userName": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

@@ -17,6 +17,8 @@ public class CreateOwnerObjectCommandHandler : IRequestHandler<CreateOwnerObject
     private readonly ILogger<CreateOwnerObjectCommandHandler> _logger;
     private readonly IOwnerObjectRepository _ownerObjectRepository;
     private readonly IMapper _autoMapper;
+    private OwnerModelOut ownerOut = null!;
+
     public CreateOwnerObjectCommandHandler(
         IOwnerObjectRepository ownerObjectRepository,
         ILogger<CreateOwnerObjectCommandHandler> logger,
@@ -39,7 +41,25 @@ public class CreateOwnerObjectCommandHandler : IRequestHandler<CreateOwnerObject
             var owner = _autoMapper.Map<Owner>(request.Owner);
             owner.CreatedDate = DateTime.Now;
             owner.UpdatedDate = DateTime.Now;
-            await _ownerObjectRepository.AddOwnerAsync(owner);
+            owner.CreatedBy = "aaraujo";
+            var idTransaction = await _ownerObjectRepository.AddOwnerAsync(owner);
+            if (idTransaction > 0)
+            {
+                var ownerTransaction = await _ownerObjectRepository.GetOwnerByIdAsync(idTransaction);
+                if (ownerTransaction is not null)
+                {
+                    ownerOut = new OwnerModelOut
+                    {
+                        Address = ownerTransaction.Address,
+                        Birthday = ownerTransaction.Birthday,   
+                        IdOwner = ownerTransaction.IdOwner,
+                        Name = ownerTransaction.Name,
+                        Photo = ownerTransaction.Photo  
+
+                    };
+                }
+                
+            }
         }
         catch (Exception e)
         {
@@ -47,7 +67,7 @@ public class CreateOwnerObjectCommandHandler : IRequestHandler<CreateOwnerObject
             {
                 Message = "Errors have occurred.",
                 StatusCode = HttpStatusCode.BadRequest,
-                Errors = new List<Domain.Common.Error> { new() { Message = e.Message, Field = "" } }
+                Errors = new List<Domain.Common.Error> { new() { Message = e.Message, Field = "Owner" } }
             };
         }
         statusCode = HttpStatusCode.Created;
@@ -59,7 +79,7 @@ public class CreateOwnerObjectCommandHandler : IRequestHandler<CreateOwnerObject
             Result = result,
             Message = message,
             StatusCode = statusCode,
-            Data = request.Owner
+            Data = ownerOut
         };
     }
 }

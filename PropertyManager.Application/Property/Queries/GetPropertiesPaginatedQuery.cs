@@ -5,12 +5,6 @@ using PropertyManager.Application.Common.Interfaces.Persistence;
 using PropertyManager.Application.Common.Interfaces.Services;
 using PropertyManager.Application.Common.Mappings;
 using PropertyManager.Application.Common.Models;
-using PropertyManager.Application.Property.Commands.UpdatePropertyObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PropertyManager.Application.Property.Queries;
 
@@ -50,7 +44,7 @@ public sealed class GetPropertiesPaginatedQueryHandler : IRequestHandler<GetProp
     public async Task<PaginatedList<PropertyModelOut>> Handle(GetPropertiesPaginatedQuery request, CancellationToken cancellationToken)
     {        
 
-        var totalPatients = await _propertyObjectRepository.GetFilteredCountPropertiesAsync(request);
+        var totalProperties = await _propertyObjectRepository.GetFilteredCountPropertiesAsync(request);
 
         var properties = await _propertyObjectRepository.GetFilteredPropertiesAsync(request);
 
@@ -65,7 +59,7 @@ public sealed class GetPropertiesPaginatedQueryHandler : IRequestHandler<GetProp
 
         var propertiesItems = await Task.WhenAll(tasks);
 
-        return await propertiesItems.AsQueryable().PaginatedListAsync(request.Page, request.Size, totalPatients);
+        return await propertiesItems.AsQueryable().PaginatedListAsync(request.Page, request.Size, totalProperties);
         
     }
 }

@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Dapper;
+using PropertyManager.Application.Common.Interfaces.Persistence;
+using PropertyManager.Application.Exceptions;
+using PropertyManager.Domain.Entities;
+
+namespace PropertyManager.Infrastructure.Persistence.Dapper
+{
+    /// <summary>
+    /// Implementation of the IPropertyImageObjectRepository interface for managing property data.
+    /// </summary>
+    public class PropertyImageObjectRepository : IPropertyImageObjectRepository
+    {
+        private readonly IUnitOfWork _uow;
+
+
+        public PropertyImageObjectRepository(
+            IUnitOfWork uow)
+        {
+            _uow = uow;
+        }
+
+        public async Task<int> AddPropertyImageAsync(PropertyImage image)
+        {
+            try
+            {
+                var repoRead = _uow.GetReadRepository<PropertyImage>();
+
+                var parameters = new Dictionary<string, object?>();
+                parameters.Add("@IdProperty", image.IdProperty);
+                parameters.Add("@File", image.File);
+                parameters.Add("@Enabled", image.Enabled);
+                var result = await repoRead.ExecuteSpListAsync("Create_PropertyImage_Async", parameters);
+
+                var propertyImage = result.FirstOrDefault();
+
+                _uow.SaveChanges();
+
+                return propertyImage!.IdProperty;
+            }
+            catch (Exception ex)
+            {
+                throw new DbContextException(ex.Message, ex);
+            }
+        }
+
+        public async Task<IEnumerable<PropertyImage>> GetImagesByPropertyIdAsync(int idProperty)
+        {
+            try
+            {
+                var parameters = new Dictionary<string, object?>();
+                parameters.Add("@IdProperty", idProperty);
+
+                var repoRead = _uow.GetReadRepository<PropertyImage>();
+                var result = await repoRead.ExecuteSpListAsync("Get_PropertyImages_By_PropertyId", parameters);
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new DbContextException(ex.Message, ex);
+            }
+        }
+    }
+}

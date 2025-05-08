@@ -46,15 +46,13 @@ namespace PropertyManager.Application.Common.Mappings;
                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
                .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address))
                .ForMember(dest => dest.Photo, opt => opt.MapFrom(src => src.Photo))
-               .ForMember(dest => dest.Birthday, opt => opt.MapFrom(src => src.Birthday))
-               .ForMember(dest => dest.CreatedBy, opt => opt.MapFrom(src => src.UserName));
+               .ForMember(dest => dest.Birthday, opt => opt.MapFrom(src => src.Birthday));
 
         CreateMap<Owner, OwnerModel>()
                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
                .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address))
                .ForMember(dest => dest.Photo, opt => opt.MapFrom(src => src.Photo))
-               .ForMember(dest => dest.Birthday, opt => opt.MapFrom(src => src.Birthday))
-               .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.CreatedBy));
+               .ForMember(dest => dest.Birthday, opt => opt.MapFrom(src => src.Birthday));
 
         CreateMap<PropertyManager.Domain.Entities.Property, PropertyModelOut>()
                 .ForMember(dest => dest.IdProperty, opt => opt.MapFrom(src => src.IdProperty))

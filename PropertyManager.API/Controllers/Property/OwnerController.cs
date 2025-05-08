@@ -23,10 +23,6 @@ public class OwnerController : ApiControllerBase
     }
 
     [HttpPost]
-    /*[SwaggerResponse(StatusCodes.Status200OK, Type = typeof(TResponse))]
-    [SwaggerResponse(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
-    [SwaggerResponse(StatusCodes.Status400BadRequest)]
-    [SwaggerResponse(StatusCodes.Status500InternalServerError)]*/
     public async Task<IActionResult> CreateOwner([FromBody] CreateOwnerObjectCommand command)
     {
         try

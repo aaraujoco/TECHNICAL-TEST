@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using PropertyManager.Application.Common.Interfaces.Persistence;
 using PropertyManager.Application.Common.Models;
-using PropertyManager.Application.Property.Commands.CreatePropertyObject;
 using PropertyManager.Domain.Common;
 using PropertyManager.Domain.Entities;
 
@@ -47,14 +41,14 @@ namespace PropertyManager.Application.Property.Commands.CreatePropertyTraceObjec
 
             try
             {
-                var propertySearch = await _propertyObjectRepository.GetPropertyByIdAsync(request.propertyTrace.IdProperty);
+                var propertySearch = await _propertyObjectRepository.GetPropertyByIdAsync(request.propertyTrace!.IdProperty);
                 if (propertySearch is null)
                 {
                     return new TResponse()
                     {
                         Message = "Property Not Found.",
                         StatusCode = HttpStatusCode.NotFound,
-                        Errors = new List<Domain.Common.Error> { new() { Message = string.Empty, Field = string.Empty } }
+                        Errors = new List<Error> { new() { Message = $"The Id Property {request.propertyTrace.IdProperty} was not Found.", Field = "IdProperty" } }
                     };
                 }
                 var property = _autoMapper.Map<PropertyTrace>(request.propertyTrace);

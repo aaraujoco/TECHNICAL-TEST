@@ -23,6 +23,7 @@ public static class DependencyInjection
         services.AddTransient<IPropertyObjectRepository, PropertyObjectRepository>();
         services.AddTransient<IPropertyTraceObjectRepository, PropertyTraceObjectRepository>();
         services.AddTransient<IPropertyTraceObjectService, PropertyTraceObjectService>();
+        services.AddTransient<IPropertyImageObjectRepository, PropertyImageObjectRepository>();
 
         services.AddHttpClient("PropertyTrace", config =>
         {

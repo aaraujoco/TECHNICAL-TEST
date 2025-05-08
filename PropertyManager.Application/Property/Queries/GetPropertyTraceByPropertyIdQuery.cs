@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using PropertyManager.Application.Common.Interfaces.Persistence;
 using PropertyManager.Application.Common.Models;
-using PropertyManager.Application.Property.Commands.UpdatePropertyObject;
 using PropertyManager.Domain.Common;
 
 namespace PropertyManager.Application.Property.Queries
@@ -45,8 +39,9 @@ namespace PropertyManager.Application.Property.Queries
                 return new TResponse()
                 {
                     StatusCode = HttpStatusCode.NotFound,
-                    Message = "The properties was not Found.",
-                    Data = propertiesModel
+                    Message = "The property Trace was not Found.",
+                    Data = propertiesModel,
+                    Errors = new List<Error> { new() { Message = $"The Id Property {request.IdProperty} was not Found.", Field = "IdProperty" } }
                 };
             }
             return new TResponse() { Data = propertiesModel };
