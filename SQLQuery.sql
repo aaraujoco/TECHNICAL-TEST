@@ -53,6 +53,18 @@ CREATE TABLE PropertyTraces (
 );
 GO
 
+CREATE TABLE PropertyImage (
+    IdPropertyImage INT IDENTITY(1,1) PRIMARY KEY,
+    IdProperty INT NOT NULL,
+    [File] NVARCHAR(MAX) NOT NULL,
+    Enabled BIT NOT NULL DEFAULT 1,
+    CreatedDate DATETIME NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT FK_PropertyImage_Property FOREIGN KEY (IdProperty)
+        REFERENCES Properties(IdProperty)
+);
+GO
+
 CREATE PROCEDURE GetOwnerById
     @IdOwner INT
 AS
@@ -326,4 +338,25 @@ BEGIN
 
     SELECT SCOPE_IDENTITY() AS IdPropertyTrace; -- Return the newly created Id
 END
+GO
+
+CREATE OR ALTER PROCEDURE Create_PropertyImage_Async
+    @IdProperty INT,
+    @File NVARCHAR(MAX),
+    @Enabled BIT
+AS
+BEGIN
+    INSERT INTO PropertyImage (IdProperty, [File], Enabled)
+    VALUES (@IdProperty, @File, @Enabled);
+END;
+GO
+
+CREATE OR ALTER PROCEDURE Get_PropertyImages_By_PropertyId
+    @IdProperty INT
+AS
+BEGIN
+    SELECT IdPropertyImage, IdProperty, [File], Enabled, CreatedDate
+    FROM PropertyImage
+    WHERE IdProperty = @IdProperty;
+END;
 GO
