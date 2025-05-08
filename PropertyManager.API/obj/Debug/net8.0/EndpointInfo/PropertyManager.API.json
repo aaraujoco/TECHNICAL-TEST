@@ -157,6 +157,49 @@
           }
         }
       }
+    },
+    "/api/Property/upload": {
+      "post": {
+        "tags": [
+          "Property"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "propertyImage.File",
+                  "propertyImage.IdProperty"
+                ],
+                "type": "object",
+                "properties": {
+                  "propertyImage.IdProperty": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "propertyImage.File": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "propertyImage.IdProperty": {
+                  "style": "form"
+                },
+                "propertyImage.File": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

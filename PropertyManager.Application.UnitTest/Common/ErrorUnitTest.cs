@@ -18,7 +18,7 @@ namespace PropertyManager.Application.UnitTest.Common
             //Arrange
             var error = new Error()
             {
-                Field = "Patient",
+                Field = "Property",
                 Message = "Error"
             };
 

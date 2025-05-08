@@ -38,7 +38,6 @@ namespace PropertyManager.API.Security.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<IEnumerable<UserModel>> Get()
         {
             var users = await context.Users.ToListAsync();

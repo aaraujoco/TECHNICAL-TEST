@@ -1,11 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Net;
+﻿using System.Net;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PropertyManager.API.Trace.Controllers.Common;
 using PropertyManager.Application.Common.Models;
-using PropertyManager.Application.Property.Commands.CreatePropertyObject;
 using PropertyManager.Application.Property.Commands.CreatePropertyTraceObject;
 using PropertyManager.Application.Property.Queries;
 using PropertyManager.Domain.Common;
@@ -53,13 +51,7 @@ namespace PropertyManager.API.Trace.Controllers.PropertyTrace
 
 
             var response = await Send(query);
-            if (response.Errors.Any()) { 
-                if (response.StatusCode == HttpStatusCode.NotFound)
-                {
-                    return NotFound(response);
-                }
-            }
-
+           
             return Ok(response);
         }
 
@@ -84,7 +76,7 @@ namespace PropertyManager.API.Trace.Controllers.PropertyTrace
 
                     return BadRequest(createProperty);
                 }
-                return CreatedAtAction(nameof(createProperty), createProperty);
+                return CreatedAtAction(nameof(CreatePropertyTrace), createProperty);
 
             }
             catch (Exception e)

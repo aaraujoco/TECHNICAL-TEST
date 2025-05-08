@@ -68,7 +68,7 @@ public class CreatePropertyObjectCommandHandler : IRequestHandler<CreateProperty
 
                 propertyOut = _autoMapper.Map<PropertyModelOut>(propertySearch);
 
-                var ownerTransaction = await _ownerObjectRepository.GetOwnerByIdAsync(idTransaction);
+                var ownerTransaction = await _ownerObjectRepository.GetOwnerByIdAsync(request.property.IdOwner);
                 if (ownerTransaction is not null)
                 {
                     ownerOut = new OwnerModelOut

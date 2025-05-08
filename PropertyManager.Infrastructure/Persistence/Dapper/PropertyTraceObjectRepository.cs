@@ -38,9 +38,6 @@ namespace PropertyManager.Infrastructure.Persistence.Dapper
                 parameters.Add("@Tax", propertyTrace.Tax);
                 parameters.Add("@IdProperty", propertyTrace.IdProperty);
                 parameters.Add("@CreatedBy", propertyTrace.CreatedBy ?? (object)DBNull.Value);
-                parameters.Add("@CreatedDate", propertyTrace.CreatedDate);
-                parameters.Add("@UpdatedBy", propertyTrace.UpdatedBy ?? (object)DBNull.Value);
-                parameters.Add("@UpdatedDate", propertyTrace.UpdatedDate);
 
                 var result = await repoRead.ExecuteSpListAsync("Create_PropertyTrace_Async", parameters);
 

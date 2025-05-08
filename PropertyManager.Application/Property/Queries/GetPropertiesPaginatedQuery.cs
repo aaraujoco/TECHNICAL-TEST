@@ -27,16 +27,19 @@ public sealed class GetPropertiesPaginatedQueryHandler : IRequestHandler<GetProp
     private readonly ILogger<GetPropertiesPaginatedQueryHandler> _logger;
     private readonly IPropertyObjectRepository _propertyObjectRepository;
     private readonly IPropertyTraceObjectService _propertyTraceObjectService;
+    private readonly IOwnerObjectRepository _ownerObjectRepository;
     private readonly IMapper _autoMapper;
 
     public GetPropertiesPaginatedQueryHandler(
         IPropertyObjectRepository propertyObjectRepository,
         IPropertyTraceObjectService propertyTraceObjectService,
+        IOwnerObjectRepository ownerObjectRepository,
         ILogger<GetPropertiesPaginatedQueryHandler> logger,
         IMapper autoMapper)
     {
         _propertyObjectRepository = propertyObjectRepository;
         _propertyTraceObjectService = propertyTraceObjectService;
+        _ownerObjectRepository = ownerObjectRepository;
         _logger = logger;
         _autoMapper = autoMapper;
     }
@@ -50,12 +53,33 @@ public sealed class GetPropertiesPaginatedQueryHandler : IRequestHandler<GetProp
 
         var propertiesModel = _autoMapper.Map<List<PropertyModelOut>>(properties);
 
+        foreach (var i in propertiesModel)
+        {
+            var ownerTransaction = await _ownerObjectRepository.GetOwnerByIdAsync(i.Owner!.IdOwner);
+            if (ownerTransaction is not null)
+            {
+                var ownerOut = new OwnerModelOut
+                {
+                    Address = ownerTransaction.Address,
+                    Birthday = ownerTransaction.Birthday,
+                    IdOwner = ownerTransaction.IdOwner,
+                    Name = ownerTransaction.Name,
+                    Photo = ownerTransaction.Photo
+
+                };
+
+                i.Owner = ownerOut;
+            }
+     
+        };
+
         var tasks = propertiesModel.Select(async i =>
         {
             var listpropertyTraces = await _propertyTraceObjectService.GetByPropertyTraceByIdAsync(i.IdProperty);
             i.PropertyTraces = listpropertyTraces.propertyTraces;
             return i;
         }).ToList();
+        
 
         var propertiesItems = await Task.WhenAll(tasks);
 

@@ -78,6 +78,18 @@
             "UpstreamHttpMethod": [ "PUT" ]
         },
         {
+            "DownstreamPathTemplate": "/api/Property/upload",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7229
+                }
+            ],
+            "UpstreamPathTemplate": "/Property/upload",
+            "UpstreamHttpMethod": [ "POST" ]
+        },
+        {
             "DownstreamPathTemplate": "/api/Property/price",
             "DownstreamScheme": "https",
             "DownstreamHostAndPorts": [
@@ -90,15 +102,27 @@
             "UpstreamHttpMethod": [ "PUT" ]
         },
         {
-            "DownstreamPathTemplate": "/api/Owner",
+            "DownstreamPathTemplate": "/api/PropertyTrace/find_by",
             "DownstreamScheme": "https",
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 7229
+                    "Port": 7167
                 }
             ],
-            "UpstreamPathTemplate": "/Owner",
+            "UpstreamPathTemplate": "/PropertyTrace/find_by",
+            "UpstreamHttpMethod": [ "POST" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/PropertyTrace",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7167
+                }
+            ],
+            "UpstreamPathTemplate": "/PropertyTrace",
             "UpstreamHttpMethod": [ "POST" ]
         }
     ],

@@ -78,5 +78,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PropertyManager.API.Controllers.Property.PropertyController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Property/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyImage.IdProperty",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "propertyImage.File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

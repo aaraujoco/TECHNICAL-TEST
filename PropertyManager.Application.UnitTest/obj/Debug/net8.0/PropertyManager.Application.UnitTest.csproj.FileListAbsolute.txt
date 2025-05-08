@@ -166,8 +166,8 @@ C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application.UnitTest\
 C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application.UnitTest\obj\Debug\net8.0\PropertyManager.Application.UnitTest.genruntimeconfig.cache
 C:\Users\USER\source\repos\PropertyManager\PropertyManager.Application.UnitTest\obj\Debug\net8.0\ref\PropertyManager.Application.UnitTest.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\CoverletSourceRootsMapping_PropertyManager.Application.UnitTest
-C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\testhost.exe
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\testhost.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\testhost.exe
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\NUnit3.TestAdapter.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\nunit.engine.dll
@@ -188,19 +188,28 @@ C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Fare.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\FluentAssertions.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\FluentValidation.dll
-C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\MediatR.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
@@ -312,6 +321,7 @@ C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.Application.UnitTest\bin\Debug\net8.0\PropertyManager.Application.dll

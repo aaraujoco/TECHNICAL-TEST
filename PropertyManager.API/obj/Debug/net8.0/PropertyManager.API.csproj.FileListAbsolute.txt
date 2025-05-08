@@ -111,7 +111,6 @@ C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\Dapper.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\Dapper.Contrib.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\FluentValidation.dll
-C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\MediatR.dll
 C:\Business\Example ASP Net\TECHNICAL-TEST\PropertyManager.API\bin\Debug\net8.0\MediatR.Contracts.dll

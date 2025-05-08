@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
-using Azure;
 using Microsoft.Extensions.Logging;
 using PropertyManager.Application.Common.Interfaces.Services;
 using PropertyManager.Application.Common.Models;
-using PropertyManager.Application.Exceptions;
-using PropertyManager.Application.Property.Commands.CreateOwnerObject;
 using PropertyManager.Domain.Common;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PropertyManager.Infrastructure.Services
 {

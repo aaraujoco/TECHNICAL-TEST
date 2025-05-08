@@ -74,6 +74,27 @@ namespace PropertyManager.Application.Common.Mappings;
             .ForMember(dest => dest.Tax, opt => opt.MapFrom(src => src.Tax))
             .ForMember(dest => dest.IdProperty, opt => opt.MapFrom(src => src.IdProperty));
 
+        CreateMap<PropertyTraceModel, PropertyTrace>()
+           .ForMember(dest => dest.DateSale, opt => opt.MapFrom(src => src.DateSale))
+           .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+           .ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.Value))
+           .ForMember(dest => dest.Tax, opt => opt.MapFrom(src => src.Tax))
+           .ForMember(dest => dest.IdProperty, opt => opt.MapFrom(src => src.IdProperty));
+
+        CreateMap<PropertyTrace, PropertyTraceModelOut>()
+            .ForMember(dest => dest.DateSale, opt => opt.MapFrom(src => src.DateSale))
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.Value))
+            .ForMember(dest => dest.Tax, opt => opt.MapFrom(src => src.Tax))
+            .ForMember(dest => dest.IdPropertyTrace, opt => opt.MapFrom(src => src.IdPropertyTrace));
+
+        CreateMap<PropertyTraceModelOut, PropertyTrace>()
+           .ForMember(dest => dest.DateSale, opt => opt.MapFrom(src => src.DateSale))
+           .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+           .ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.Value))
+           .ForMember(dest => dest.Tax, opt => opt.MapFrom(src => src.Tax))
+           .ForMember(dest => dest.IdPropertyTrace, opt => opt.MapFrom(src => src.IdPropertyTrace));
+
 
 
     }

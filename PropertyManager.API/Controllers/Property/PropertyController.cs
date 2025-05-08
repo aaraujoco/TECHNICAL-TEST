@@ -1,11 +1,11 @@
-﻿using Azure.Core;
-using FluentValidation;
+﻿using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PropertyManager.API.Controllers.Common;
 using PropertyManager.Application.Common.Models;
 using PropertyManager.Application.Property.Commands.CreatePropertyObject;
 using PropertyManager.Application.Property.Commands.UpdatePropertyObject;
+using PropertyManager.Application.Property.Commands.UploadPropertyImageObject;
 using PropertyManager.Application.Property.Queries;
 using PropertyManager.Domain.Common;
 using System.Net;
@@ -18,6 +18,7 @@ public class PropertyController : ApiControllerBase
     private readonly IValidator<PropertyModel> _validator;
     private readonly IValidator<PropertyPriceModel> _validatorPrice;
     private readonly IValidator<PropertyUpdateModel> _validatorUpdate;
+    private readonly IValidator<UploadPropertyImageModel> _validatorUploadImage;
     private readonly IValidator<GetPropertiesPaginatedQuery> _validatorGetProperty;
 
     public PropertyController(
@@ -25,11 +26,13 @@ public class PropertyController : ApiControllerBase
         IValidator<PropertyModel> validator,
         IValidator<PropertyPriceModel> validatorPrice,
         IValidator<PropertyUpdateModel> validatorUpdate,
+        IValidator<UploadPropertyImageModel> validatorUploadImage,
         IValidator<GetPropertiesPaginatedQuery> validatorGetProperty) : base(mediator)
     {
         _validator = validator;
         _validatorPrice = validatorPrice;
         _validatorUpdate = validatorUpdate;
+        _validatorUploadImage = validatorUploadImage;
         _validatorGetProperty = validatorGetProperty;
     }
 
@@ -40,7 +43,7 @@ public class PropertyController : ApiControllerBase
     [HttpPost("find")]
     public async Task<IActionResult> FindProperties([FromBody] GetPropertiesPaginatedQuery query, CancellationToken cancellationToken)
     {
-        var result = await _validatorGetProperty.ValidateAsync(query);        
+        var result = await _validatorGetProperty.ValidateAsync(query);
         var existErrors = result.Errors.Exists(x => x.Severity == Severity.Error);
 
         if (!result.IsValid && existErrors)
@@ -55,8 +58,8 @@ public class PropertyController : ApiControllerBase
                 })
             });
         }
-        
-        
+
+
         var response = await Send(query);
 
         return Ok(new TResponse()
@@ -114,19 +117,19 @@ public class PropertyController : ApiControllerBase
             if (validationResult.StatusCode == HttpStatusCode.BadRequest)
                 return new BadRequestObjectResult(validationResult);
 
-            var updatePatient = await Send(command);
+            var updateProperty = await Send(command);
 
-            if (updatePatient.StatusCode == HttpStatusCode.NotFound)
-                return NotFound(updatePatient);
+            if (updateProperty.StatusCode == HttpStatusCode.NotFound)
+                return NotFound(updateProperty);
 
-            if (updatePatient.Errors.Any())
+            if (updateProperty.Errors.Any())
             {
-                if (updatePatient.StatusCode == HttpStatusCode.InternalServerError)
-                    return StatusCode(StatusCodes.Status500InternalServerError, updatePatient);
+                if (updateProperty.StatusCode == HttpStatusCode.InternalServerError)
+                    return StatusCode(StatusCodes.Status500InternalServerError, updateProperty);
 
-                return BadRequest(updatePatient);
+                return BadRequest(updateProperty);
             }
-            return Ok(updatePatient);
+            return Ok(updateProperty);
 
         }
         catch (Exception e)
@@ -153,19 +156,19 @@ public class PropertyController : ApiControllerBase
             if (validationResult.StatusCode == HttpStatusCode.BadRequest)
                 return new BadRequestObjectResult(validationResult);
 
-            var updatePatient = await Send(command);
+            var updateProperty = await Send(command);
 
-            if (updatePatient.StatusCode == HttpStatusCode.NotFound)
-                return NotFound(updatePatient);
+            if (updateProperty.StatusCode == HttpStatusCode.NotFound)
+                return NotFound(updateProperty);
 
-            if (updatePatient.Errors.Any())
+            if (updateProperty.Errors.Any())
             {
-                if (updatePatient.StatusCode == HttpStatusCode.InternalServerError)
-                    return StatusCode(StatusCodes.Status500InternalServerError, updatePatient);
+                if (updateProperty.StatusCode == HttpStatusCode.InternalServerError)
+                    return StatusCode(StatusCodes.Status500InternalServerError, updateProperty);
 
-                return BadRequest(updatePatient);
+                return BadRequest(updateProperty);
             }
-            return Ok(updatePatient);
+            return Ok(updateProperty);
 
         }
         catch (Exception e)
@@ -178,6 +181,38 @@ public class PropertyController : ApiControllerBase
         }
     }
 
+    [HttpPost("upload")]
+    public async Task<IActionResult> UploadImage([FromForm] UploadPropertyImageObjectCommand command)
+    {
+        try
+        {
+            var validationResult = await ValidatePropertyImageObject(command);
+            if (validationResult.StatusCode == HttpStatusCode.BadRequest)
+                return new BadRequestObjectResult(validationResult);
+
+            var updateProperty = await Send(command);
+
+            if (updateProperty.StatusCode == HttpStatusCode.NotFound)
+                return NotFound(updateProperty);
+
+            if (updateProperty.Errors.Any())
+            {
+                if (updateProperty.StatusCode == HttpStatusCode.InternalServerError)
+                    return StatusCode(StatusCodes.Status500InternalServerError, updateProperty);
+
+                return BadRequest(updateProperty);
+            }
+            return CreatedAtAction(nameof(UploadImage), updateProperty);
+        }
+        catch (Exception e)
+        {
+            return new BadRequestObjectResult(new TResponse()
+            {
+                Message = e.Message,
+                StatusCode = HttpStatusCode.BadRequest
+            });
+        }
+    }
     private async Task<TResponse> ValidatePropertyObject(CreatePropertyObjectCommand request)
     {
         var result = await _validator.ValidateAsync(request.property!);
@@ -235,6 +270,23 @@ public class PropertyController : ApiControllerBase
         return response;
     }
 
-  
+    private async Task<TResponse> ValidatePropertyImageObject(UploadPropertyImageObjectCommand request)
+    {
+        var result = await _validatorUploadImage.ValidateAsync(request.propertyImage!);
+        var response = new TResponse();
+        var existErrors = result.Errors.Exists(x => x.Severity == Severity.Error);
+
+        if (!result.IsValid && existErrors)
+        {
+            response.Message = "Errors have occurred.";
+            response.StatusCode = HttpStatusCode.BadRequest;
+            response.Errors = result.Errors.Where(x => x.Severity == Severity.Error).Select(e => new Error()
+            {
+                Field = e.PropertyName,
+                Message = e.ErrorMessage
+            });
+        }
+        return response;
+    }
 }
 

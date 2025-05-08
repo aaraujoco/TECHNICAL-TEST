@@ -329,12 +329,11 @@ CREATE OR ALTER PROCEDURE Create_PropertyTrace_Async
     @Value DECIMAL(18, 2),
     @Tax DECIMAL(18, 2),
     @IdProperty INT,
-    @CreatedBy NVARCHAR(255),
-    @UpdatedBy NVARCHAR(255)
+    @CreatedBy NVARCHAR(255)
 AS
 BEGIN
     INSERT INTO PropertyTraces (DateSale, Name, Value, Tax, IdProperty, CreatedBy, CreatedDate, UpdatedBy, UpdatedDate)
-    VALUES (@DateSale, @Name, @Value, @Tax, @IdProperty, @CreatedBy, GETDATE(), @UpdatedBy, GETDATE());
+    VALUES (@DateSale, @Name, @Value, @Tax, @IdProperty, @CreatedBy, GETDATE(), @CreatedBy, GETDATE());
 
     SELECT SCOPE_IDENTITY() AS IdPropertyTrace; -- Return the newly created Id
 END
@@ -348,6 +347,8 @@ AS
 BEGIN
     INSERT INTO PropertyImage (IdProperty, [File], Enabled)
     VALUES (@IdProperty, @File, @Enabled);
+
+	SELECT SCOPE_IDENTITY() AS IdPropertyImage;
 END;
 GO
 
